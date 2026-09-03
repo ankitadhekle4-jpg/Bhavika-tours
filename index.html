@@ -1,170 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bhavika Tours & Travels</title>
+<title>Bhavika Tours & Travels</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            background: #f5f7fa;
-            color: #222;
-        }
+body {
+    background: #f5f7fa;
+    color: #222;
+}
 
-        /* Navigation */
-        nav {
-            background: #071c2c;
-            color: white;
-            padding: 18px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Navigation */
+nav {
+    background: #071c2c;
+    color: white;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav h2 {
-            color: #ffb703;
-        }
+nav h2 {
+    color: #ffb703;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 14px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
 
-        /* Hero */
-        .hero {
-            min-height: 550px;
-            padding: 100px 25px;
-            text-align: center;
-            color: white;
+/* Hero */
+.hero {
+    min-height: 550px;
+    padding: 100px 25px;
+    text-align: center;
+    color: white;
 
-            background:
-            linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-            url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800")
-            center/cover;
-        }
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800")
+    center/cover;
+}
 
-        .hero h1 {
-            font-size: 45px;
-            margin-bottom: 20px;
-        }
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 14px 25px;
-            background: #ffb703;
-            color: #071c2c;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-        }
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #ffb703;
+    color: #071c2c;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
 
-        /* Sections */
-        section {
-            padding: 55px 25px;
-            text-align: center;
-        }
+/* Sections */
+section {
+    padding: 55px 25px;
+    text-align: center;
+}
 
-        section h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #071c2c;
-        }
+section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #071c2c;
+}
 
-        /* Cards */
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-        .card {
-            background: white;
-            width: 280px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
 
-        .card h3 {
-            margin-bottom: 12px;
-            color: #071c2c;
-        }
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
 
-        .card p {
-            color: #555;
-            line-height: 1.6;
-        }
+.card h3 {
+    margin: 15px 0 12px;
+    color: #071c2c;
+}
 
-        /* About */
-        .about {
-            background: white;
-            line-height: 1.8;
-        }
+.card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
 
-        /* Contact */
-        .contact {
-            background: #071c2c;
-            color: white;
-        }
-
-        .contact h2 {
-            color: white;
-        }
-
-        .contact p {
-            margin: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background: #04111b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Mobile */
-        @media(max-width: 600px) {
-
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 5px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero p {
-                font-size: 17px;
-            }
-
-            .card {
-                width: 100%;
-                max-width: 330px;
-            }
-        }
-      .booking-form {
+/* Booking */
+.booking-form {
     max-width: 500px;
     margin: auto;
     padding: 20px;
@@ -175,7 +133,6 @@
     width: 100%;
     padding: 14px;
     margin: 8px 0;
-    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
@@ -184,17 +141,70 @@
 .booking-form .btn {
     width: 100%;
     margin-top: 10px;
-      }
-      /* Mobile Header */
-@media (max-width: 600px) {
+}
+
+/* Cars */
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.car-box {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.car-box img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.car-box h3 {
+    margin: 12px 0;
+}
+
+/* Contact */
+#contact {
+    background: #071c2c;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+.contact-box p {
+    margin: 12px;
+}
+
+.contact-box .btn {
+    margin: 8px;
+}
+
+/* Footer */
+footer {
+    background: #04111b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+@media(max-width:600px) {
+
     nav {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
+        gap: 12px;
     }
 
     nav h2 {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     nav div {
@@ -205,185 +215,303 @@
     }
 
     nav a {
-        margin-left: 5px;
-        font-size: 14px;
+        margin: 5px;
     }
-          }
-    </style>
+
+    .hero {
+        min-height: 500px;
+        padding: 90px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>BHAVIKA</h2>
+<!-- Navigation -->
+<nav>
+    <h2>BHAVIKA</h2>
 
-        <div>
-            <a href="#home">Home</a>
-            <a href="#packages">Packages</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-
-    <!-- Home -->
-    <div class="hero" id="home">
-
-        <h1>BHAVIKA TOURS & TRAVELS</h1>
-
-        <p>
-            Explore. Travel. Create Memories.
-        </p>
-
-        <a class="btn" href="#contact">
-            Book Your Trip
-        </a>
-
+    <div>
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#cars">Cars</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
     </div>
+</nav>
 
 
-    <!-- Packages -->
-    <section id="packages">
+<!-- Home -->
+<div class="hero" id="home">
 
-        <h2>Our Tour Services</h2>
+    <h1>BHAVIKA TOURS & TRAVELS</h1>
 
-        <div class="cards">
+    <p>Explore. Travel. Create Memories.</p>
 
-    <div class="card">
-        <img src="https://www.mangocabs.in/images/services/city_taxi_card.png"
-             style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+    <a class="btn" href="#booking">
+        Book Your Trip
+    </a>
 
-        <h3>🚗 Sedan</h3>
-
-        <p>
-            Seating: 4+1<br>
-            Rate: <b>₹12 / KM</b>
-        </p>
-
-        <a class="btn" href="tel:9158603999">
-            Book Now
-        </a>
-    </div>
+</div>
 
 
-    <div class="card">
-        <img src="https://sohimtravels.com/images/fleet/fronx.jpg"
-             style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+<!-- Tour Services -->
+<section id="packages">
 
-        <h3>🚙 SUV</h3>
+    <h2>Our Tour Services</h2>
 
-        <p>
-            Seating: 6+1<br>
-            Rate: <b>₹16 / KM</b>
-        </p>
+    <div class="cards">
 
-        <a class="btn" href="tel:9158603999">
-            Book Now
-        </a>
-    </div>
+        <!-- Sedan -->
+        <div class="card">
 
+            <img src="https://www.mangocabs.in/images/services/city_taxi_card.png">
 
-    <div class="card">
-        <img src="https://goataxicab.com/images/premium-suv-hero.webp"
-             style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+            <h3>🚗 Sedan</h3>
 
-        <h3>🚘 XUV</h3>
+            <p>
+                Seating: 4+1<br>
+                Rate: <b>₹12 / KM</b>
+            </p>
 
-        <p>
-            Seating: 7+1<br>
-            Rate: <b>₹20 / KM</b>
-        </p>
-
-        <a class="btn" href="tel:9158603999">
-            Book Now
-        </a>
-    </div>
+            <a class="btn" href="tel:9158603999">
+                Book Now
+            </a>
 
         </div>
-        <section id="booking">
+
+
+        <!-- SUV -->
+        <div class="card">
+
+            <img src="https://sohimtravels.com/images/fleet/fronx.jpg">
+
+            <h3>🚙 SUV</h3>
+
+            <p>
+                Seating: 6+1<br>
+                Rate: <b>₹16 / KM</b>
+            </p>
+
+            <a class="btn" href="tel:9158603999">
+                Book Now
+            </a>
+
+        </div>
+
+
+        <!-- XUV -->
+        <div class="card">
+
+            <img src="https://goataxicab.com/images/premium-suv-hero.webp">
+
+            <h3>🚘 XUV</h3>
+
+            <p>
+                Seating: 7+1<br>
+                Rate: <b>₹20 / KM</b>
+            </p>
+
+            <a class="btn" href="tel:9158603999">
+                Book Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Our Cars -->
+<section id="cars">
+
+    <h2>Our Cars 🚗</h2>
+
+    <div class="cars-container">
+
+        <div class="car-box">
+
+            <img src="car1.jpg" alt="Toyota Taisor">
+
+            <h3>Toyota Taisor</h3>
+
+            <p>
+                <b>Car No: MH 15 KS 8292</b>
+            </p>
+
+        </div>
+
+
+        <div class="car-box">
+
+            <img src="car2.jpg" alt="Toyota Taisor">
+
+            <h3>Toyota Taisor</h3>
+
+            <p>
+                <b>Car No: MH 15 JW 8292</b>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Booking -->
+<section id="booking">
+
     <h2>📲 Book Your Trip</h2>
 
     <div class="booking-form">
 
-        <input type="text" id="name" placeholder="Your Name">
+        <input
+            type="text"
+            id="name"
+            placeholder="Customer Name"
+            required
+        >
 
-        <input type="text" id="from" placeholder="From">
+        <input
+            type="text"
+            id="from"
+            placeholder="From"
+            required
+        >
 
-        <input type="text" id="to" placeholder="To">
+        <input
+            type="text"
+            id="to"
+            placeholder="To"
+            required
+        >
 
-        <input type="date" id="date">
+        <input
+            type="date"
+            id="date"
+            required
+        >
 
-        <select id="car">
-            <option value="">Select Car</option>
-            <option>Sedan - 4+1 - ₹12/KM</option>
-            <option>SUV - 6+1 - ₹16/KM</option>
-            <option>XUV - 7+1 - ₹20/KM</option>
+        <select id="car" required>
+
+            <option value="">
+                Select Car
+            </option>
+
+            <option value="Sedan - 4+1 - ₹12/KM">
+                Sedan - 4+1 - ₹12/KM
+            </option>
+
+            <option value="SUV - 6+1 - ₹16/KM">
+                SUV - 6+1 - ₹16/KM
+            </option>
+
+            <option value="XUV - 7+1 - ₹20/KM">
+                XUV - 7+1 - ₹20/KM
+            </option>
+
         </select>
 
-        <button class="btn" onclick="sendWhatsApp()">
+        <button
+            class="btn"
+            onclick="sendWhatsApp()"
+        >
             💬 Send Booking on WhatsApp
         </button>
 
     </div>
+
 </section>
+
+
+<!-- Contact -->
 <section id="contact">
+
     <h2>📞 Contact Us</h2>
 
     <div class="contact-box">
+
         <h3>BHAVIKA TOURS & TRAVELS</h3>
 
         <p>🚗 Comfortable & Reliable Travel Service</p>
+
         <p>📍 Nashik, Maharashtra</p>
 
         <a class="btn" href="tel:9158603999">
             📞 Call Now
         </a>
 
-        <a class="btn" href="https://wa.me/919158603999?text=Hello%20Bhavika%20Tours%20%26%20Travels">
+        <a
+            class="btn"
+            href="https://wa.me/919158603999?text=Hello%20Bhavika%20Tours%20%26%20Travels"
+        >
             💬 WhatsApp Us
         </a>
+
     </div>
+
 </section>
+
+
+<!-- Footer -->
+<footer>
+
+    © 2026 Bhavika Tours & Travels
+    <br>
+    All Rights Reserved.
+
+</footer>
+
+
+<!-- WhatsApp Script -->
 <script>
+
 function sendWhatsApp() {
 
-    var name = document.getElementById("name").value;
-    var from = document.getElementById("from").value;
-    var to = document.getElementById("to").value;
+    var name = document.getElementById("name").value.trim();
+    var from = document.getElementById("from").value.trim();
+    var to = document.getElementById("to").value.trim();
     var date = document.getElementById("date").value;
     var car = document.getElementById("car").value;
 
+    if (name === "" || from === "" || to === "" || date === "" || car === "") {
+
+        alert("Please fill all booking details.");
+
+        return;
+    }
+
     var message =
-        "🚗 BHAVIKA TOURS & TRAVELS Booking%0A%0A" +
-        "Name: " + name + "%0A" +
-        "From: " + from + "%0A" +
-        "To: " + to + "%0A" +
-        "Date: " + date + "%0A" +
-        "Car: " + car;
+        "🚗 BHAVIKA TOURS & TRAVELS%0A%0A" +
+        "Customer Name: " + encodeURIComponent(name) + "%0A" +
+        "From: " + encodeURIComponent(from) + "%0A" +
+        "To: " + encodeURIComponent(to) + "%0A" +
+        "Date: " + encodeURIComponent(date) + "%0A" +
+        "Car: " + encodeURIComponent(car);
 
     window.open(
         "https://wa.me/919158603999?text=" + message,
         "_blank"
     );
 }
+
 </script>
-<section style="padding:40px 20px; text-align:center;">
-  <h2>Our Cars 🚗</h2>
 
-  <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center;">
-
-    <div style="background:white; padding:15px; border-radius:15px; max-width:350px;">
-      <img src="car1.jpg" alt="Toyota Taisor MH 15 KS 8292"
-           style="width:100%; border-radius:12px;">
-      <h3>Toyota Taisor</h3>
-      <p><b>Car No: MH 15 KS 8292</b></p>
-    </div>
-
-    <div style="background:white; padding:15px; border-radius:15px; max-width:350px;">
-      <img src="car2.jpg" alt="Toyota Taisor MH 15 JW 8292"
-           style="width:100%; border-radius:12px;">
-      <h3>Toyota Taisor</h3>
-      <p><b>Car No: MH 15 JW 8292</b></p>
-
-        
+</body>
+</html>
