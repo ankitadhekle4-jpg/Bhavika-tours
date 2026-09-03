@@ -6,20 +6,15 @@
 
 <title>Bhavika Tours & Travels | Nashik to Mumbai & Pune</title>
 
-<meta name="description" content="Bhavika Tours & Travels offers daily travel and pickup services from Nashik to Mumbai and Pune, family trips and outstation travel.">
-<meta name="keywords" content="Bhavika Tours and Travels, Nashik Mumbai travel, Nashik Pune travel, Nashik cab, Nashik outstation taxi">
-<meta name="author" content="Bhavika Tours & Travels">
-
-<meta property="og:title" content="Bhavika Tours & Travels">
-<meta property="og:description" content="Daily travel from Nashik to Mumbai and Pune. Book your trip with Bhavika Tours & Travels.">
-<meta property="og:type" content="website">
+<meta name="description" content="Bhavika Tours & Travels - Daily travel from Nashik to Mumbai and Pune. Sedan, SUV and XUV available for family and outstation travel.">
+<meta name="keywords" content="Bhavika Tours, Nashik Mumbai taxi, Nashik Pune taxi, Nashik travel, outstation taxi">
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 html{
@@ -45,15 +40,16 @@ header{
 }
 
 .logo{
-    font-size:22px;
-    font-weight:bold;
     color:#ffd76a;
+    font-size:21px;
+    font-weight:bold;
 }
 
 nav{
     display:flex;
     align-items:center;
-    gap:18px;
+    gap:16px;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -67,24 +63,24 @@ nav a:hover{
 }
 
 #languageSelect{
-    padding:8px 10px;
-    border-radius:8px;
+    padding:8px;
+    border-radius:7px;
     border:none;
     font-weight:bold;
 }
 
 .hero{
-    min-height:90vh;
+    min-height:88vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(135deg,#781c12,#a83b24,#f2c46d);
+    padding:30px 20px;
+    background:linear-gradient(135deg,#781c12,#a83b24,#e8bd63);
 }
 
 .hero-box{
-    background:rgba(255,255,255,.95);
+    background:rgba(255,255,255,.96);
     padding:45px 30px;
     border-radius:25px;
     max-width:850px;
@@ -105,7 +101,7 @@ nav a:hover{
 }
 
 .hero p{
-    font-size:20px;
+    font-size:19px;
     margin-bottom:25px;
 }
 
@@ -120,17 +116,12 @@ nav a:hover{
     color:white;
 }
 
-.btn:hover{
-    background:#a83b24;
-}
-
 .btn.gold{
     background:#d39b18;
-    color:white;
 }
 
 section{
-    padding:70px 6%;
+    padding:65px 6%;
 }
 
 .section-title{
@@ -188,13 +179,30 @@ section{
 
 .car-info h3{
     color:#781c12;
-    margin-bottom:8px;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.car-info p{
+    margin:7px;
+    font-size:17px;
+}
+
+.rate{
+    color:#781c12;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.vehicle{
+    margin-top:10px;
+    font-weight:bold;
 }
 
 .about{
-    text-align:center;
     max-width:900px;
     margin:auto;
+    text-align:center;
     line-height:1.8;
     font-size:17px;
 }
@@ -222,7 +230,7 @@ form{
     gap:18px;
 }
 
-input, select, textarea{
+input,select,textarea{
     width:100%;
     padding:13px;
     border:1px solid #ddd;
@@ -253,6 +261,7 @@ textarea{
 
 .contact{
     text-align:center;
+    line-height:2;
 }
 
 .contact a{
@@ -287,13 +296,13 @@ footer{
 }
 
 @media(max-width:700px){
+
     header{
         flex-direction:column;
         gap:12px;
     }
 
     nav{
-        flex-wrap:wrap;
         justify-content:center;
         gap:10px;
     }
@@ -316,355 +325,418 @@ footer{
 }
 </style>
 
-<!-- Google structured data -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"TravelAgency",
-  "name":"Bhavika Tours & Travels",
-  "description":"Daily travel service from Nashik to Mumbai and Pune.",
-  "telephone":"+91-9158603999",
-  "areaServed":[
-    "Nashik",
-    "Mumbai",
-    "Pune"
-  ],
-  "sameAs":[
-    "https://www.instagram.com/kurankar_manoj/"
-  ]
+ "@context":"https://schema.org",
+ "@type":"TravelAgency",
+ "name":"Bhavika Tours & Travels",
+ "telephone":"+91-9158603999",
+ "description":"Daily travel service from Nashik to Mumbai and Pune.",
+ "areaServed":["Nashik","Mumbai","Pune"],
+ "sameAs":["https://www.instagram.com/kurankar_manoj/"]
 }
 </script>
+
 </head>
 
 <body>
 
 <header>
-    <div class="logo">BHAVIKA TOURS & TRAVELS</div>
 
-    <nav>
-        <a href="#home" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
-        <a href="#services" data-en="Services" data-mr="सेवा">Services</a>
-        <a href="#cars" data-en="Our Cars" data-mr="आमच्या गाड्या">Our Cars</a>
-        <a href="#about" data-en="About" data-mr="आमच्याबद्दल">About</a>
-        <a href="#booking" data-en="Booking" data-mr="बुकिंग">Booking</a>
-        <a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a>
+<div class="logo">BHAVIKA TOURS & TRAVELS</div>
 
-        <select id="languageSelect">
-            <option value="en">English</option>
-            <option value="mr">मराठी</option>
-        </select>
-    </nav>
+<nav>
+<a href="#home" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+<a href="#services" data-en="Services" data-mr="सेवा">Services</a>
+<a href="#cars" data-en="Our Cars" data-mr="आमच्या गाड्या">Our Cars</a>
+<a href="#about" data-en="About" data-mr="आमच्याबद्दल">About</a>
+<a href="#booking" data-en="Booking" data-mr="बुकिंग">Booking</a>
+<a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a>
+
+<select id="languageSelect">
+<option value="en">English</option>
+<option value="mr">मराठी</option>
+</select>
+
+</nav>
 </header>
 
+
 <section class="hero" id="home">
-    <div class="hero-box">
 
-        <div class="mantra">ॐ श्री गणेशाय नमः</div>
+<div class="hero-box">
 
-        <h1 data-en="BHAVIKA TOURS & TRAVELS"
-            data-mr="भाविका टूर्स अँड ट्रॅव्हल्स">
-            BHAVIKA TOURS & TRAVELS
-        </h1>
+<div class="mantra">ॐ श्री गणेशाय नमः</div>
 
-        <p data-en="Comfortable and Reliable Travel from Nashik to Mumbai & Pune"
-           data-mr="नाशिक ते मुंबई आणि पुणे आरामदायी व विश्वासार्ह प्रवास">
-           Comfortable and Reliable Travel from Nashik to Mumbai & Pune
-        </p>
+<h1 data-en="BHAVIKA TOURS & TRAVELS"
+data-mr="भाविका टूर्स अँड ट्रॅव्हल्स">
+BHAVIKA TOURS & TRAVELS
+</h1>
 
-        <a href="#booking" class="btn"
-           data-en="Book Your Trip"
-           data-mr="तुमची ट्रिप बुक करा">
-           Book Your Trip
-        </a>
+<p data-en="Comfortable and Reliable Travel from Nashik to Mumbai & Pune"
+data-mr="नाशिक ते मुंबई आणि पुणे आरामदायी व विश्वासार्ह प्रवास">
+Comfortable and Reliable Travel from Nashik to Mumbai & Pune
+</p>
 
-        <a href="https://wa.me/919158603999" class="btn gold">
-            WhatsApp
-        </a>
+<a href="#booking" class="btn"
+data-en="Book Your Trip"
+data-mr="तुमची ट्रिप बुक करा">
+Book Your Trip
+</a>
 
-    </div>
+<a href="https://wa.me/919158603999" class="btn gold">
+WhatsApp
+</a>
+
+</div>
 </section>
+
 
 <section id="services">
 
-    <h2 class="section-title"
-        data-en="Our Services"
-        data-mr="आमच्या सेवा">
-        Our Services
-    </h2>
+<h2 class="section-title"
+data-en="Our Services"
+data-mr="आमच्या सेवा">
+Our Services
+</h2>
 
-    <div class="cards">
+<div class="cards">
 
-        <div class="card">
-            <div class="icon">🚗</div>
-            <h3 data-en="Nashik to Mumbai"
-                data-mr="नाशिक ते मुंबई">
-                Nashik to Mumbai
-            </h3>
-            <p data-en="Daily pickup and comfortable travel service."
-               data-mr="दररोज पिकअप आणि आरामदायी प्रवास सेवा.">
-               Daily pickup and comfortable travel service.
-            </p>
-        </div>
+<div class="card">
+<div class="icon">🚗</div>
+<h3 data-en="Nashik to Mumbai"
+data-mr="नाशिक ते मुंबई">
+Nashik to Mumbai
+</h3>
+<p data-en="Daily pickup and comfortable travel service."
+data-mr="दररोज पिकअप आणि आरामदायी प्रवास सेवा.">
+Daily pickup and comfortable travel service.
+</p>
+</div>
 
-        <div class="card">
-            <div class="icon">🚕</div>
-            <h3 data-en="Nashik to Pune"
-                data-mr="नाशिक ते पुणे">
-                Nashik to Pune
-            </h3>
-            <p data-en="Safe and reliable travel service to Pune."
-               data-mr="पुण्यासाठी सुरक्षित आणि विश्वासार्ह प्रवास सेवा.">
-               Safe and reliable travel service to Pune.
-            </p>
-        </div>
+<div class="card">
+<div class="icon">🚕</div>
+<h3 data-en="Nashik to Pune"
+data-mr="नाशिक ते पुणे">
+Nashik to Pune
+</h3>
+<p data-en="Safe and reliable travel service to Pune."
+data-mr="पुण्यासाठी सुरक्षित आणि विश्वासार्ह प्रवास सेवा.">
+Safe and reliable travel service to Pune.
+</p>
+</div>
 
-        <div class="card">
-            <div class="icon">👨‍👩‍👧‍👦</div>
-            <h3 data-en="Family Trips"
-                data-mr="कौटुंबिक प्रवास">
-                Family Trips
-            </h3>
-            <p data-en="Comfortable cars for family and group travel."
-               data-mr="कुटुंब आणि ग्रुप प्रवासासाठी आरामदायी गाड्या.">
-               Comfortable cars for family and group travel.
-            </p>
-        </div>
+<div class="card">
+<div class="icon">👨‍👩‍👧‍👦</div>
+<h3 data-en="Family Trips"
+data-mr="कौटुंबिक प्रवास">
+Family Trips
+</h3>
+<p data-en="Comfortable cars for family and group travel."
+data-mr="कुटुंब आणि ग्रुप प्रवासासाठी आरामदायी गाड्या.">
+Comfortable cars for family and group travel.
+</p>
+</div>
 
-        <div class="card">
-            <div class="icon">🛣️</div>
-            <h3 data-en="Outstation Travel"
-                data-mr="आऊटस्टेशन प्रवास">
-                Outstation Travel
-            </h3>
-            <p data-en="Travel anywhere with our reliable service."
-               data-mr="आमच्या विश्वासार्ह सेवेसह कुठेही प्रवास करा.">
-               Travel anywhere with our reliable service.
-            </p>
-        </div>
+<div class="card">
+<div class="icon">🛣️</div>
+<h3 data-en="Outstation Travel"
+data-mr="आऊटस्टेशन प्रवास">
+Outstation Travel
+</h3>
+<p data-en="Travel anywhere with our reliable service."
+data-mr="आमच्या विश्वासार्ह सेवेसह कुठेही प्रवास करा.">
+Travel anywhere with our reliable service.
+</p>
+</div>
 
-    </div>
+</div>
 </section>
+
 
 <section class="cars" id="cars">
 
-    <h2 class="section-title"
-        data-en="Our Cars"
-        data-mr="आमच्या गाड्या">
-        Our Cars
-    </h2>
+<h2 class="section-title"
+data-en="Our Cars"
+data-mr="आमच्या गाड्या">
+Our Cars
+</h2>
 
-    <div class="cards">
+<div class="cards">
 
-        <div class="car-card">
-            <img src="car1.jpg" alt="Bhavika Tours car 1">
-            <div class="car-info">
-                <h3>Car 1</h3>
-                <p>Comfortable & Clean</p>
-            </div>
-        </div>
 
-        <div class="car-card">
-            <img src="car2.jpg" alt="Bhavika Tours car 2">
-            <div class="car-info">
-                <h3>Car 2</h3>
-                <p>Safe & Reliable</p>
-            </div>
-        </div>
+<!-- SEDAN -->
 
-        <div class="car-card">
-            <img src="car3.jpg" alt="Bhavika Tours car 3">
-            <div class="car-info">
-                <h3>Car 3</h3>
-                <p>Comfortable Travel</p>
-            </div>
-        </div>
+<div class="car-card">
 
-    </div>
+<img src="sedan.jpg" alt="Bhavika Tours Sedan">
 
-    <div style="text-align:center;margin-top:25px;font-weight:bold;color:#781c12;">
-        Vehicle No. : MH 15 JW 8292
-    </div>
+<div class="car-info">
+
+<h3>Sedan</h3>
+
+<p>
+<strong>4+1 Seater</strong>
+</p>
+
+<p class="rate">
+₹12 / km
+</p>
+
+<p class="vehicle">
+Vehicle No. : MH 15 JW 8292
+</p>
+
+</div>
+</div>
+
+
+<!-- SUV -->
+
+<div class="car-card">
+
+<img src="suv.jpg" alt="Bhavika Tours SUV">
+
+<div class="car-info">
+
+<h3>SUV</h3>
+
+<p>
+<strong>6+1 Seater</strong>
+</p>
+
+<p class="rate">
+₹16 / km
+</p>
+
+</div>
+</div>
+
+
+<!-- XUV -->
+
+<div class="car-card">
+
+<img src="xuv.jpg" alt="Bhavika Tours XUV">
+
+<div class="car-info">
+
+<h3>XUV</h3>
+
+<p>
+<strong>7+1 Seater</strong>
+</p>
+
+<p class="rate">
+₹20 / km
+</p>
+
+</div>
+</div>
+
+</div>
 
 </section>
+
 
 <section id="about">
 
-    <h2 class="section-title"
-        data-en="About Bhavika Tours & Travels"
-        data-mr="भाविका टूर्स अँड ट्रॅव्हल्स बद्दल">
-        About Bhavika Tours & Travels
-    </h2>
+<h2 class="section-title"
+data-en="About Bhavika Tours & Travels"
+data-mr="भाविका टूर्स अँड ट्रॅव्हल्स बद्दल">
+About Bhavika Tours & Travels
+</h2>
 
-    <div class="about">
+<div class="about">
 
-        <p data-en="Bhavika Tours & Travels provides comfortable, safe and reliable travel services from Nashik to Mumbai and Pune. We also provide family trips and outstation travel services. Our goal is to make every journey comfortable and memorable."
-           data-mr="भाविका टूर्स अँड ट्रॅव्हल्स नाशिक ते मुंबई आणि पुणे आरामदायी, सुरक्षित आणि विश्वासार्ह प्रवास सेवा देते. आम्ही कौटुंबिक आणि आऊटस्टेशन प्रवास सेवाही देतो. प्रत्येक प्रवास आरामदायी आणि आनंददायी करणे हे आमचे ध्येय आहे.">
-           Bhavika Tours & Travels provides comfortable, safe and reliable travel services from Nashik to Mumbai and Pune. We also provide family trips and outstation travel services. Our goal is to make every journey comfortable and memorable.
-        </p>
+<p data-en="Bhavika Tours & Travels provides comfortable, safe and reliable travel services from Nashik to Mumbai and Pune. We also provide family trips and outstation travel services. Our goal is to make every journey comfortable and memorable."
+data-mr="भाविका टूर्स अँड ट्रॅव्हल्स नाशिक ते मुंबई आणि पुणे आरामदायी, सुरक्षित आणि विश्वासार्ह प्रवास सेवा देते. आम्ही कौटुंबिक आणि आऊटस्टेशन प्रवास सेवाही देतो. प्रत्येक प्रवास आरामदायी आणि आनंददायी करणे हे आमचे ध्येय आहे.">
+Bhavika Tours & Travels provides comfortable, safe and reliable travel services from Nashik to Mumbai and Pune. We also provide family trips and outstation travel services. Our goal is to make every journey comfortable and memorable.
+</p>
 
-    </div>
+</div>
 </section>
+
 
 <section class="booking" id="booking">
 
-    <h2 class="section-title"
-        data-en="Book Your Trip"
-        data-mr="तुमची ट्रिप बुक करा">
-        Book Your Trip
-    </h2>
+<h2 class="section-title"
+data-en="Book Your Trip"
+data-mr="तुमची ट्रिप बुक करा">
+Book Your Trip
+</h2>
 
-    <form id="bookingForm">
+<form id="bookingForm">
 
-        <div class="form-grid">
+<div class="form-grid">
 
-            <input type="text" id="name" required
-                   placeholder="Customer Name"
-                   data-placeholder-en="Customer Name"
-                   data-placeholder-mr="ग्राहकाचे नाव">
+<input type="text" id="name" required
+placeholder="Customer Name"
+data-placeholder-en="Customer Name"
+data-placeholder-mr="ग्राहकाचे नाव">
 
-            <input type="tel" id="mobile" required
-                   placeholder="Mobile Number"
-                   data-placeholder-en="Mobile Number"
-                   data-placeholder-mr="मोबाईल नंबर">
+<input type="tel" id="mobile" required
+placeholder="Mobile Number"
+data-placeholder-en="Mobile Number"
+data-placeholder-mr="मोबाईल नंबर">
 
-            <input type="text" id="from" required
-                   placeholder="From"
-                   data-placeholder-en="From"
-                   data-placeholder-mr="कुठून">
+<input type="text" id="from" required
+placeholder="From"
+data-placeholder-en="From"
+data-placeholder-mr="कुठून">
 
-            <input type="text" id="to" required
-                   placeholder="To"
-                   data-placeholder-en="To"
-                   data-placeholder-mr="कुठे">
+<input type="text" id="to" required
+placeholder="To"
+data-placeholder-en="To"
+data-placeholder-mr="कुठे">
 
-            <input type="date" id="date" required>
+<input type="date" id="date" required>
 
-            <select id="car" required>
-                <option value="">Select Car</option>
-                <option>Car 1</option>
-                <option>Car 2</option>
-                <option>Car 3</option>
-            </select>
+<select id="car" required>
+<option value="">Select Car</option>
+<option>Sedan - 4+1 - ₹12/km</option>
+<option>SUV - 6+1 - ₹16/km</option>
+<option>XUV - 7+1 - ₹20/km</option>
+</select>
 
-            <input type="number" id="passengers" min="1" required
-                   placeholder="Number of Passengers"
-                   data-placeholder-en="Number of Passengers"
-                   data-placeholder-mr="प्रवाशांची संख्या">
+<input type="number" id="passengers"
+min="1"
+required
+placeholder="Number of Passengers"
+data-placeholder-en="Number of Passengers"
+data-placeholder-mr="प्रवाशांची संख्या">
 
-            <textarea id="note"
-                      class="full"
-                      placeholder="Special Note"
-                      data-placeholder-en="Special Note"
-                      data-placeholder-mr="विशेष सूचना"></textarea>
+<textarea id="note"
+class="full"
+placeholder="Special Note"
+data-placeholder-en="Special Note"
+data-placeholder-mr="विशेष सूचना"></textarea>
 
-            <div class="full">
-                <button type="submit" class="submit-btn">
-                    📲 Send Booking on WhatsApp
-                </button>
-            </div>
+<div class="full">
 
-        </div>
+<button type="submit" class="submit-btn">
+📲 Send Booking on WhatsApp
+</button>
 
-    </form>
+</div>
+
+</div>
+</form>
+
 </section>
+
 
 <section id="contact">
 
-    <h2 class="section-title"
-        data-en="Contact Us"
-        data-mr="आमच्याशी संपर्क साधा">
-        Contact Us
-    </h2>
+<h2 class="section-title"
+data-en="Contact Us"
+data-mr="आमच्याशी संपर्क साधा">
+Contact Us
+</h2>
 
-    <div class="contact">
+<div class="contact">
 
-        <p>📞 <a href="tel:+919158603999">9158603999</a></p>
+<p>📞 <a href="tel:+919158603999">9158603999</a></p>
 
-        <p style="margin-top:15px;">
-            💬 <a href="https://wa.me/919158603999">
-                WhatsApp
-            </a>
-        </p>
+<p>
+💬 <a href="https://wa.me/919158603999">
+WhatsApp
+</a>
+</p>
 
-        <p style="margin-top:15px;">
-            📸 <a href="https://www.instagram.com/kurankar_manoj/">
-                Instagram: @kurankar_manoj
-            </a>
-        </p>
+<p>
+📸 <a href="https://www.instagram.com/kurankar_manoj/">
+Instagram: @kurankar_manoj
+</a>
+</p>
 
-    </div>
+</div>
+
 </section>
+
 
 <footer>
 
-    <p>
-        © 2026 BHAVIKA TOURS & TRAVELS
-    </p>
+<p>© 2026 BHAVIKA TOURS & TRAVELS</p>
 
-    <p style="margin-top:8px;">
-        Nashik • Mumbai • Pune
-    </p>
+<p>Nashik • Mumbai • Pune</p>
 
 </footer>
 
+
 <a class="whatsapp"
-   href="https://wa.me/919158603999"
-   aria-label="WhatsApp">
-    💬
+href="https://wa.me/919158603999"
+aria-label="WhatsApp">
+💬
 </a>
+
 
 <script>
 
-const languageSelect = document.getElementById("languageSelect");
+const languageSelect =
+document.getElementById("languageSelect");
 
 function changeLanguage(lang){
 
-    document.documentElement.lang = lang;
+document.documentElement.lang=lang;
 
-    document.querySelectorAll("[data-en]").forEach(function(element){
+document.querySelectorAll("[data-en]").forEach(function(element){
 
-        element.textContent = element.getAttribute("data-" + lang);
-
-    });
-
-    document.querySelectorAll("[data-placeholder-en]").forEach(function(element){
-
-        element.placeholder =
-            element.getAttribute("data-placeholder-" + lang);
-
-    });
-
-    const car = document.getElementById("car");
-
-    if(lang === "mr"){
-        car.options[0].text = "गाडी निवडा";
-    }else{
-        car.options[0].text = "Select Car";
-    }
-
-}
-
-languageSelect.addEventListener("change", function(){
-
-    changeLanguage(this.value);
+element.textContent =
+element.getAttribute("data-"+lang);
 
 });
 
+document.querySelectorAll("[data-placeholder-en]").forEach(function(element){
 
-document.getElementById("bookingForm").addEventListener("submit", function(e){
+element.placeholder =
+element.getAttribute("data-placeholder-"+lang);
 
-    e.preventDefault();
+});
 
-    const name = document.getElementById("name").value;
-    const mobile = document.getElementById("mobile").value;
-    const from = document.getElementById("from").value;
-    const to = document.getElementById("to").value;
-    const date = document.getElementById("date").value;
-    const car = document.getElementById("car").value;
-    const passengers = document.getElementById("passengers").value;
-    const note = document.getElementById("note").value;
+const car=document.getElementById("car");
 
-    const message =
+if(lang==="mr"){
+
+car.options[0].text="गाडी निवडा";
+car.options[1].text="सेडान - 4+1 - ₹12/km";
+car.options[2].text="एसयूव्ही - 6+1 - ₹16/km";
+car.options[3].text="एक्सयूव्ही - 7+1 - ₹20/km";
+
+}else{
+
+car.options[0].text="Select Car";
+car.options[1].text="Sedan - 4+1 - ₹12/km";
+car.options[2].text="SUV - 6+1 - ₹16/km";
+car.options[3].text="XUV - 7+1 - ₹20/km";
+
+}
+
+}
+
+languageSelect.addEventListener(
+"change",
+function(){
+changeLanguage(this.value);
+}
+);
+
+
+document.getElementById("bookingForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name=document.getElementById("name").value;
+const mobile=document.getElementById("mobile").value;
+const from=document.getElementById("from").value;
+const to=document.getElementById("to").value;
+const date=document.getElementById("date").value;
+const car=document.getElementById("car").value;
+const passengers=document.getElementById("passengers").value;
+const note=document.getElementById("note").value;
+
+const message=
 `🚗 BHAVIKA TOURS & TRAVELS - NEW BOOKING
 
 Customer Name: ${name}
@@ -676,11 +748,11 @@ Car: ${car}
 Number of Passengers: ${passengers}
 Special Note: ${note}`;
 
-    const whatsappURL =
-        "https://wa.me/919158603999?text=" +
-        encodeURIComponent(message);
+const whatsappURL=
+"https://wa.me/919158603999?text="+
+encodeURIComponent(message);
 
-    window.open(whatsappURL, "_blank");
+window.open(whatsappURL,"_blank");
 
 });
 
@@ -688,4 +760,3 @@ Special Note: ${note}`;
 
 </body>
     </html>
-    
