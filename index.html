@@ -64,11 +64,23 @@ header{
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
     color:#d4af37;
     font-size:21px;
     font-weight:bold;
     letter-spacing:.5px;
 }
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+}
+
 
 nav{
     display:flex;
@@ -499,7 +511,8 @@ font-size:18px;
 <header>
 
 <div class="logo">
-BHAVIKA TOURS & TRAVELS
+    <img src="logo.jpg" alt="Bhavika Tours & Travels Logo">
+    <span>BHAVIKA TOURS & TRAVELS</span>
 </div>
 
 <nav>
